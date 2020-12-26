@@ -1,0 +1,377 @@
+<html>
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script> 
+
+
+$(document).ready(function(){
+  $("#menu").click(function(){
+    $("#menubar").toggle();
+  });
+});
+</script> 
+<style>
+  .card {
+  
+  transition: transform .2s; /* Animation */
+  
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: scale(1.1); 
+}
+  .cen{
+    display: flex;
+    justify-content: center;
+  }
+  .h{
+    background-image:black;
+    color:#4ecdc4;
+  }
+  .heading{
+    font-family: 'Allura', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-size: 70px;
+display: flex;
+justify-content: center;
+
+  }
+  .select{
+    background-image:linear-gradient(#4ecdc4,#556270);
+  }
+  .prachi{
+    color:#4ecdc4;
+  }
+  .cop{
+    display: flex;
+    justify-content: center;
+    color: #666666;
+    margin-top: 10px;
+  }
+  .lo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top:-6px;
+  }
+#menubar{
+  display:none;
+}
+  </style>
+ <body class="bg-dark">
+ <header>
+ 	<div class="h" style="height: 160px">
+ 		<h1 class="heading"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="70" height="70"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#4ecdc4"><path d="M86,10.32v17.2l30.96,-8.6zM86,27.52c-0.69875,0 -1.45125,0.215 -2.0425,0.645l-72.24,51.7075c-0.90031,0.645 -1.3975,1.67969 -1.3975,2.795v10.2125c0,6.06031 7.28313,13.76 15.48,13.76c4.91813,0 9.47344,-2.71437 12.3625,-6.235c3.52063,3.52063 9.15094,6.235 15.1575,6.235c6.26188,0 12.09375,-3.03687 15.5875,-6.7725c3.7625,3.7625 10.105,6.7725 17.0925,6.7725c6.9875,0 13.33,-3.01 17.0925,-6.7725c3.48031,3.73563 9.32563,6.7725 15.5875,6.7725c6.00656,0 11.63688,-2.71437 15.1575,-6.235c2.88906,3.52063 7.44438,6.235 12.3625,6.235c8.19688,0 15.48,-7.69969 15.48,-13.76v-10.32c0,-1.11531 -0.49719,-2.15 -1.3975,-2.795l-72.24,-51.6c-0.59125,-0.43 -1.34375,-0.645 -2.0425,-0.645zM69.015,108.6825c-4.63594,3.05031 -10.25281,4.8375 -15.695,4.8375c-5.11969,0 -10.29312,-1.505 -14.7275,-4.1925c-3.82969,2.70094 -8.33125,4.1925 -12.7925,4.1925c-3.21156,0 -6.42312,-0.83312 -9.3525,-2.2575l-6.3425,54.18h56.975l7.2025,-28.9175h23.435l7.2025,28.9175h56.975l-6.3425,-54.18c-2.92937,1.42438 -6.14094,2.2575 -9.3525,2.2575c-4.46125,0 -8.96281,-1.49156 -12.7925,-4.1925c-4.43437,2.6875 -9.60781,4.1925 -14.7275,4.1925c-5.44219,0 -11.05906,-1.78719 -15.695,-4.8375c-4.93156,3.07719 -10.95156,4.8375 -16.985,4.8375c-6.03344,0 -12.05344,-1.76031 -16.985,-4.8375z"></path></g></g></svg>&nbspEntertainment Hub&nbsp</h1>
+ 	</div>
+ 	</header>
+<div style="margin-top:-60px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li>
+      <img src="icon.png" style="width:20px;height:20px;margin-top:10px;" id="menu">
+    </li>
+    <li class="nav-item" style="margin-left:20px">
+      <a class="nav-link btn " href="#" data-toggle="modal" data-target="#myModal" href="#">Login</a>
+
+        <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Log-In</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+    <div class="form-group">
+    <table>
+    <tr>
+      <td><label for="email">Email:</label><td>
+     <td><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="margin-left:27px;width:200px"></td>
+     </tr>
+     </table>
+    </div>
+    <div class="form-group">
+    <table>
+    <tr>
+      <td><label for="pwd">Password:</label></td>
+      <td><input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"></td>
+      </tr>
+      </table>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    </li>
+
+
+
+      <li class="nav-item" style="margin-left:20px">
+      <a class="nav-link btn " href="#" data-toggle="modal" data-target="#mModal" href="#">SignUP</a>
+
+        <div class="modal" id="mModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">SignUp</h4><br>
+          
+          <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+          
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+          <form action="/action_page.php">
+    <div class="form-group">
+    <table>
+    <tr>
+      <td><label for="email">Email:</label><td>
+     <td><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="margin-left:87px;width:200px"></td>
+     </tr>
+     </table>
+    </div>
+    <div class="form-group">
+    <table>
+    <tr>
+      <td><label for="pwd">Password:</label></td>
+      <td><input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="margin-left:62px;width:200px"></td>
+      </tr>
+      </table>
+    </div>
+    <div class="form-group">
+    <table>
+    <tr>
+      <td><label for="cpwd">Confirm Password:</label></td>
+      <td><input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="pswd"></td>
+      </tr>
+      </table>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue;text-decoration:underline">Terms & Privacy</a>.</p>
+    <span class="cen"><button type="submit" class="btn btn-primary">SignUp</button>&nbsp&nbsp&nbsp
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button></span>
+  </form>
+        </div>
+        
+        <!-- Modal footer -->
+        
+        
+      </div>
+    </div>
+  </div>
+    </li>
+
+
+
+
+
+    </li>
+    <li>
+      <form class="form-inline" action="/action_page.php" style="margin-left: 850px;height:20px">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+  </form>
+    </li>
+    <li>
+      <button class="btn btn-info" type="submit">Watch Now</button>
+    </li>
+
+
+  </ul>
+</nav>
+
+</div>
+
+<div class="select"style="height:510px ;width: 100%">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+     
+ <div class="container-fluid">
+ <div class="row">
+
+ <div style="height:550px ;width: 100%;margin-top: -30px ">
+
+  <div class="card" style="width:300px;margin-top:50px;margin-left:200px">
+    <img class="card-img-top" src="movie.jpg" alt="movies" style="width:90%">
+    <div class="card-body">
+      <h4 class="card-title">Movies</h4>
+      <p class="card-text">Watch latest movies from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See Movies list</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px;height:425px;margin-left:600px;margin-top:-425px">
+    <img class="card-img-top" src="web_series.jpg" alt="movies" style="width:90%;margin-top:60px">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:50px">Web Series</h4>
+      <p class="card-text">Watch latest web series from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See Web Series list</a>
+    </div>
+  </div>
+    <div class="card" style="width:300px;height:425px;margin-left:1000px;margin-top: -425px">
+    <img class="card-img-top" src="tele.png" alt="movies" style="width:90%;margin-top: 50px">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:40px">TV Shows</h4>
+      <p class="card-text">Watch TV Shows from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See TV Shows list</a>
+    </div>
+  </div>
+
+
+ </div>
+ 
+</div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+       <div class="container-fluid">
+ <div class="row">
+
+ <div style="height:550px ;width: 100%;margin-top: -30px ">
+
+  <div class="card" style="width:300px;margin-top:50px;margin-left:200px">
+    <img class="card-img-top" src="kid.webp" alt="movies" style="width:90% ;height:250px">
+    <div class="card-body">
+      <h4 class="card-title">Kids</h4>
+      <p class="card-text">Watch kids shows from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See kids shows list</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px;height:410px;margin-left:600px;margin-top:-410px">
+    <img class="card-img-top" src="music.png" alt="movies" style="width:90%;height:200px;margin-top:20px">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:25px">Music</h4>
+      <p class="card-text">Listen latest songs from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See songs list</a>
+    </div>
+  </div>
+    <div class="card" style="width:300px;height:410px;margin-left:1000px;margin-top: -410px">
+    <img class="card-img-top" src="game.png" alt="movies" style="width:90%">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:-20px">TV Shows</h4>
+      <p class="card-text">Watch TV Shows from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See TV Shows list</a>
+    </div>
+  </div>
+
+
+ </div>
+ 
+</div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid">
+ <div class="row">
+
+ <div style="height:550px ;width: 100%;margin-top: -30px ">
+
+  <div class="card" style="width:300px;margin-top:50px;margin-left:200px">
+    <img class="card-img-top" src="news.png" alt="News" style="width:90%;margin-left: 15px">
+    <div class="card-body">
+      <h4 class="card-title">News</h4>
+      <p class="card-text">Watch latest news from here!</p>
+      <a href="#" class="btn btn-info stretched-link">Latest News Update!</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px;height:425px;margin-left:600px;margin-top:-425px">
+    <img class="card-img-top" src="reli.png" alt="movies" style="width:90%;margin-top:30px;height:200px;margin-left:15px">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:35px">Religious Channels</h4>
+      <p class="card-text">Watch Religious channels from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See Religious channels list</a>
+    </div>
+  </div>
+    <div class="card" style="width:300px;height:425px;margin-left:1000px;margin-top: -425px">
+    <img class="card-img-top" src="er.png" alt="movies" style="width:90%;margin-top: 5px">
+    <div class="card-body">
+      <h4 class="card-title" style="margin-top:0px">Retro Movies</h4>
+      <p class="card-text">Watch Retro movies from here!</p>
+      <a href="#" class="btn btn-info stretched-link">See Retro movies list</a>
+    </div>
+  </div>
+
+ </div>
+ 
+</div>
+</div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+<div class=" list-group bg-dark text-light" id="menubar" style="width:200px;margin-top: -520px; ">
+  <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Most Viewed</a>
+
+    <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Recently Added</a>
+    <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Years</a>
+    <a href="#" class="list-group-item list-group-item-dark list-group-item-action">Genres</a>
+
+
+  </div>
+
+</div>
+
+<footer>
+	<div class="bg-dark" style="height: 40px">
+		<p class="cop">Copyright&nbsp<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="20" height="20"
+viewBox="0 0 172 172"
+style=" fill:#000000;margin-top:2px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M86,0c-47.41887,0 -86,38.58113 -86,86c0,47.41887 38.58113,86 86,86c47.41887,0 86,-38.58113 86,-86c0,-47.41887 -38.58113,-86 -86,-86zM86,13.23077c40.26082,0 72.76923,32.50842 72.76923,72.76923c0,40.26082 -32.50841,72.76923 -72.76923,72.76923c-40.26081,0 -72.76923,-32.50841 -72.76923,-72.76923c0,-40.26081 32.50842,-72.76923 72.76923,-72.76923zM86,39.69231c-25.78966,0 -46.30769,20.51803 -46.30769,46.30769c0,25.78967 20.51803,46.30769 46.30769,46.30769c21.16406,0 38.29688,-13.90264 44.24038,-33.07692h-13.85096c-5.29747,11.91286 -17.15865,19.84615 -30.38942,19.84615c-18.52824,0 -33.07692,-14.54868 -33.07692,-33.07692c0,-18.52824 14.54868,-33.07692 33.07692,-33.07692c13.23077,0 25.09195,7.93329 30.38942,19.84615h13.85096c-5.94351,-19.17428 -23.07632,-33.07692 -44.24038,-33.07692z"></path></g></g></svg>&nbspAll rights reserved</p>
+<p class="lo">Made with&nbsp<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="20" height="20" 
+viewBox="0 0 172 172"
+style=" fill:#000000;margin-top:1px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,162.71469l-2.20375,-1.8275c-4.17906,-3.49375 -9.83625,-7.28312 -16.39375,-11.66375c-25.54469,-17.10594 -60.5225,-40.51406 -60.5225,-80.42344c0,-24.65781 20.06219,-44.72 44.72,-44.72c13.39719,0 25.94781,5.96625 34.4,16.16531c8.45219,-10.19906 21.00281,-16.16531 34.4,-16.16531c24.65781,0 44.72,20.06219 44.72,44.72c0,39.90938 -34.97781,63.3175 -60.5225,80.42344c-6.5575,4.38063 -12.21469,8.17 -16.39375,11.66375z"></path></g></g></svg>&nbsp<span class="prachi">by Prachi</span></p>
+	</div>
+</footer>
+</body>
+</html>
